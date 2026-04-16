@@ -112,7 +112,7 @@ class MockedStream extends LUT\Stream
     {
     }
 
-    public function &_open(string $fileName, LUT\Context $context = null)
+    public function &_open(string $fileName, ?LUT\Context $context = null)
     {
     }
 

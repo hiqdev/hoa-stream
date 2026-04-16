@@ -58,17 +58,17 @@ interface Structural extends Stream
     /**
      * Select elements of type E: E.
      */
-    public function selectElements(string $E = null): array;
+    public function selectElements(?string $E = null): array;
 
     /**
      * Select F elements descendant of an E element: E F.
      */
-    public function selectDescendantElements(string $F = null): array;
+    public function selectDescendantElements(?string $F = null): array;
 
     /**
      * Select F elements children of an E element: E > F.
      */
-    public function selectChildElements(string $F = null): array;
+    public function selectChildElements(?string $F = null): array;
 
     /**
      * Select an F element immediately preceded by an E element: E + F.
@@ -78,7 +78,7 @@ interface Structural extends Stream
     /**
      * Select F elements preceded by an E element: E ~ F.
      */
-    public function selectSiblingElements(string $F = null): array;
+    public function selectSiblingElements(?string $F = null): array;
 
     /**
      * Execute a query selector and return the first result.

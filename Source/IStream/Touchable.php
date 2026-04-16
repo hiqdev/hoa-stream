@@ -110,5 +110,5 @@ interface Touchable extends Stream
     /**
      * Change the current umask.
      */
-    public static function umask(int $umask = null): int;
+    public static function umask(?int $umask = null): int;
 }
