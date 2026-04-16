@@ -776,7 +776,7 @@ class Stream extends Test\Unit\Suite
 
 class SUT extends LUT\Stream
 {
-    protected function &_open(string $streamName, LUT\Context $context = null)
+    protected function &_open(string $streamName, ?LUT\Context $context = null)
     {
         if (null === $context) {
             $out = fopen($streamName, 'rb');
